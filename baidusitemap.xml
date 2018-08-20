@@ -4,6 +4,30 @@
 
     
   <url>
+    <loc>http://epsilonx.cn/blog/generate-hex-header-file/</loc>
+    <lastmod>2018-08-20T08:36:30.000Z</lastmod>
+    <data>
+        <display>
+        <title>xxd命令生成十六进制头文件</title>
+        <pubTime>2018-08-20T08:09:54.000Z</pubTime>
+        
+        <tag>xxd</tag>
+         
+        <tag>file</tag>
+         
+        <tag>bundle</tag>
+         
+         
+           
+             
+              <breadCrumb title="tools" url="http://epsilonx.cn/categories/tools/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://epsilonx.cn/blog/svn-too-old/</loc>
     <lastmod>2018-08-20T03:57:14.000Z</lastmod>
     <data>
@@ -17,28 +41,6 @@
            
              
               <breadCrumb title="bugfix" url="http://epsilonx.cn/categories/bugfix/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://epsilonx.cn/blog/change-xcode-font/</loc>
-    <lastmod>2018-08-20T03:57:14.000Z</lastmod>
-    <data>
-        <display>
-        <title>如何改变Xcode的编辑器字体</title>
-        <pubTime>2016-03-16T07:53:40.000Z</pubTime>
-        
-        <tag>Xcode</tag>
-         
-        <tag>font</tag>
-         
-         
-           
-             
-              <breadCrumb title="Xcode" url="http://epsilonx.cn/categories/Xcode/"/>
           
         </display>
     </data>
@@ -194,6 +196,28 @@
            
              
               <breadCrumb title="iOS开发" url="http://epsilonx.cn/categories/iOS%E5%BC%80%E5%8F%91/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://epsilonx.cn/blog/change-xcode-font/</loc>
+    <lastmod>2018-08-20T03:57:14.000Z</lastmod>
+    <data>
+        <display>
+        <title>如何改变Xcode的编辑器字体</title>
+        <pubTime>2016-03-16T07:53:40.000Z</pubTime>
+        
+        <tag>Xcode</tag>
+         
+        <tag>font</tag>
+         
+         
+           
+             
+              <breadCrumb title="Xcode" url="http://epsilonx.cn/categories/Xcode/"/>
           
         </display>
     </data>

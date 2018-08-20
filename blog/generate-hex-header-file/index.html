@@ -6,20 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://epsilonx.cn">
-  <title>使用iOS自带CommonCrypto库计算MD5 | EpsilonX</title>
+  <title>xxd命令生成十六进制头文件 | EpsilonX</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="开发中常常会用到MD5计算，实际上iOS 5.0就已经内置了加密和哈希计算的库，这里就简单讲下用其中的CommonCrypto进行MD5计算。 Objective-C代码:123456789101112#import &amp;lt;CommonCrypto/CommonCrypto.h&amp;gt;+(NSString *)MD5:(NSString *)str&amp;#123;    const char* cs">
-<meta name="keywords" content="iOS,CommonCrypto,MD5">
+  <meta name="description" content="xxd命令是什么？1xxd [options] [infile] [outfile] xxd命令用于二进制或十六进制显示文件的内容，本文将重点讲下xxd -i这个命令的使用。  -i | -include output in C include file style. A complete static array  definition  is  written (named after the">
+<meta name="keywords" content="xxd,file,bundle">
 <meta property="og:type" content="article">
-<meta property="og:title" content="使用iOS自带CommonCrypto库计算MD5">
-<meta property="og:url" content="http://epsilonx.cn/blog/use-CommonCrypto-for-MD5/index.html">
+<meta property="og:title" content="xxd命令生成十六进制头文件">
+<meta property="og:url" content="http://epsilonx.cn/blog/generate-hex-header-file/index.html">
 <meta property="og:site_name" content="EpsilonX">
-<meta property="og:description" content="开发中常常会用到MD5计算，实际上iOS 5.0就已经内置了加密和哈希计算的库，这里就简单讲下用其中的CommonCrypto进行MD5计算。 Objective-C代码:123456789101112#import &amp;lt;CommonCrypto/CommonCrypto.h&amp;gt;+(NSString *)MD5:(NSString *)str&amp;#123;    const char* cs">
+<meta property="og:description" content="xxd命令是什么？1xxd [options] [infile] [outfile] xxd命令用于二进制或十六进制显示文件的内容，本文将重点讲下xxd -i这个命令的使用。  -i | -include output in C include file style. A complete static array  definition  is  written (named after the">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-08-20T03:57:14.000Z">
+<meta property="og:updated_time" content="2018-08-20T08:36:30.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="使用iOS自带CommonCrypto库计算MD5">
-<meta name="twitter:description" content="开发中常常会用到MD5计算，实际上iOS 5.0就已经内置了加密和哈希计算的库，这里就简单讲下用其中的CommonCrypto进行MD5计算。 Objective-C代码:123456789101112#import &amp;lt;CommonCrypto/CommonCrypto.h&amp;gt;+(NSString *)MD5:(NSString *)str&amp;#123;    const char* cs">
+<meta name="twitter:title" content="xxd命令生成十六进制头文件">
+<meta name="twitter:description" content="xxd命令是什么？1xxd [options] [infile] [outfile] xxd命令用于二进制或十六进制显示文件的内容，本文将重点讲下xxd -i这个命令的使用。  -i | -include output in C include file style. A complete static array  definition  is  written (named after the">
   
     <link rel="alternative" href="/atom.xml" title="EpsilonX" type="application/atom+xml">
   
@@ -164,29 +164,50 @@ ga('send', 'pageview');
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-use-CommonCrypto-for-MD5" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-generate-hex-header-file" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      使用iOS自带CommonCrypto库计算MD5
+      xxd命令生成十六进制头文件
     </h1>
   
 
         
-        <a href="/blog/use-CommonCrypto-for-MD5/" class="archive-article-date">
-  	<time datetime="2016-03-04T02:36:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-03-04</time>
+        <a href="/blog/generate-hex-header-file/" class="archive-article-date">
+  	<time datetime="2018-08-20T08:09:54.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-20</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>开发中常常会用到MD5计算，实际上iOS 5.0就已经内置了<a href="https://developer.apple.com/library/mac/documentation/Security/Conceptual/cryptoservices/GeneralPurposeCrypto/GeneralPurposeCrypto.html" target="_blank" rel="noopener">加密和哈希计算的库</a>，这里就简单讲下用其中的<a href="https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man3/Common%20Crypto.3cc.html#//apple_ref/doc/man/3cc/CommonCrypto" target="_blank" rel="noopener">CommonCrypto</a>进行MD5计算。</p>
-<p>Objective-C代码:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">#import &lt;CommonCrypto/CommonCrypto.h&gt;</span><br><span class="line">+(NSString *)MD5:(NSString *)str</span><br><span class="line">&#123;</span><br><span class="line">    const char* cstr = [str UTF8String];</span><br><span class="line">    unsigned char result[CC_MD5_DIGEST_LENGTH];</span><br><span class="line">    CC_MD5(cstr, (CC_LONG)strlen(cstr), result);</span><br><span class="line">    </span><br><span class="line">    return [NSString stringWithFormat:</span><br><span class="line">            @&quot;%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x&quot;,</span><br><span class="line">            result[0], result[1], result[2], result[3], result[4], result[5], result[6], result[7],</span><br><span class="line">            result[8], result[9], result[10], result[11], result[12], result[13], result[14], result[15]];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>此外，CommonCrypto还支持SHA，Hmac等。</p>
+        <h1 id="xxd命令是什么？"><a href="#xxd命令是什么？" class="headerlink" title="xxd命令是什么？"></a>xxd命令是什么？</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">xxd [options] [infile] [outfile]</span><br></pre></td></tr></table></figure>
+<p>xxd命令用于二进制或十六进制显示文件的内容，本文将重点讲下<code>xxd -i</code>这个命令的使用。</p>
+<blockquote>
+<p>-i | -include</p>
+<p>output in C include file style. A complete static array  definition  is  written (named after the input file), unless xxd reads from stdin.</p>
+</blockquote>
+<p><code>xxd -i</code> 可以把指定的二进制文件转换成C的头文件，那么这样做有啥用呢？</p>
+<h1 id="应用场景"><a href="#应用场景" class="headerlink" title="应用场景"></a>应用场景</h1><p>在实际开发中，特别是SDK开发者，对于一些图片资源文件，常常需要建立一个bundle来打包这些图片，如果是静态库，提供给第三方时，需要一并带上bundle，有时候一个bundle里可能就几张图，有没有更好的方式不需要用bundle来存这些图呢？</p>
+<p>当然是有的，我们就利用<code>xxd -i abc.jpg abc.h</code>命令，将二进制的图片文件转成头文件，那么就不需要用bundle来打包图片了，只需要将这些图片生成的头文件放入项目中即可。</p>
+<p>生成的头文件是类似这样的结构：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">unsigned</span> <span class="keyword">char</span> abc_png[] = &#123;</span><br><span class="line">  <span class="number">0x89</span>, <span class="number">0x50</span>, <span class="number">0x4e</span>, <span class="number">0x47</span>, <span class="number">0x0d</span>, <span class="number">0x0a</span>, <span class="number">0x1a</span>, <span class="number">0x0a</span>, <span class="number">0x00</span>, <span class="number">0x00</span>, <span class="number">0x00</span>, <span class="number">0x0d</span>,</span><br><span class="line">  <span class="number">0x49</span>, <span class="number">0x48</span>, <span class="number">0x44</span>, <span class="number">0x52</span>, <span class="number">0x00</span>, <span class="number">0x00</span>, <span class="number">0x00</span>, <span class="number">0x3c</span>, <span class="number">0x00</span>, <span class="number">0x00</span>, <span class="number">0x00</span>, <span class="number">0x3c</span>,</span><br><span class="line">  <span class="number">0x08</span>, <span class="number">0x06</span>, <span class="number">0x00</span>, <span class="number">0x00</span>, <span class="number">0x00</span>, <span class="number">0x3a</span>, <span class="number">0xfc</span>, <span class="number">0xd9</span>, <span class="number">0x72</span>, <span class="number">0x00</span>, <span class="number">0x00</span>, <span class="number">0x00</span>,</span><br><span class="line">   .... <span class="comment">//省略无数行</span></span><br><span class="line">  <span class="number">0xf7</span>, <span class="number">0xf0</span>, <span class="number">0xd5</span>, <span class="number">0x19</span>, <span class="number">0xf4</span>, <span class="number">0x00</span>, <span class="number">0x00</span>, <span class="number">0x00</span>, <span class="number">0x00</span>, <span class="number">0x49</span>, <span class="number">0x45</span>, <span class="number">0x4e</span>,</span><br><span class="line">  <span class="number">0x44</span>, <span class="number">0xae</span>, <span class="number">0x42</span>, <span class="number">0x60</span>, <span class="number">0x82</span></span><br><span class="line">&#125;;</span><br><span class="line"><span class="keyword">unsigned</span> <span class="keyword">int</span> abc_png_len = <span class="number">1541</span>;</span><br></pre></td></tr></table></figure>
+<p>调用方法如下:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">#import &quot;abc.h&quot;</span><br><span class="line">...</span><br><span class="line">NSData *imgData = [NSData dataWithBytesNoCopy:abc_png length:abc_png_len freeWhenDone:NO];</span><br><span class="line">UIImage *image = [UIImage imageWithData:imageData];</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+<h1 id="优缺点"><a href="#优缺点" class="headerlink" title="优缺点"></a>优缺点</h1><p>优点：</p>
+<ul>
+<li>无需新建bundle来打包图片，使得静态库的使用更为方便</li>
+</ul>
+<p>缺点：</p>
+<ul>
+<li><p>每个图片都需要生成一个头文件，当然也可以手动把生成的内容汇总在同一个文件里，但这样可读性会变差</p>
+</li>
+<li><p>头文件的大小大约是原始PNG图片的十倍左右，对于一些小的icon比较适用。</p>
+</li>
+</ul>
 
       
 
@@ -200,15 +221,15 @@ ga('send', 'pageview');
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">iOS</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">xxd</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">CommonCrypto</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">file</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">MD5</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">bundle</a>
         		</li>
       		
 		</ul>
@@ -220,7 +241,7 @@ ga('send', 'pageview');
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/iOS开发//" class="article-tag-list-link color1">iOS开发</a>
+        			<a href="/categories/tools//" class="article-tag-list-link color1">tools</a>
         		</li>
       		
 		</ul>
@@ -275,7 +296,7 @@ ga('send', 'pageview');
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://epsilonx.cn/blog/use-CommonCrypto-for-MD5/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://epsilonx.cn/blog/generate-hex-header-file/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -290,18 +311,9 @@ ga('send', 'pageview');
   
 <nav id="article-nav">
   
-    <a href="/blog/macros-in-ios/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          iOS开发中macro的使用
-        
-      </div>
-    </a>
   
-  
-    <a href="/blog/svn-too-old/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Mac SVN版本太旧解决办法</div>
+    <a href="/blog/init-tensorflow-in-macOS/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">在macOS上搭建TensorFlow环境</div>
       <i class="icon-circle-right"></i>
     </a>
   
